@@ -55,16 +55,13 @@ class CreateWorkers extends Command
     {
         $worker = $this->worker;
         $queueClass = $this->queueClass;
-        $queues = Queue::all();
-        $worker->daemon(function () use ($worker, $queues, $queueClass) {
+        $worker->daemon(function () use ($worker, $queueClass) {
            echo 'Queue running... ';
+           $queues = Queue::all();
            foreach ($queues as $queue) {
                if ($queue) {
                    $queueClass->applyItem($queue);
-               }
-               else { 
-                   // do nothing
-                }
+               }      
            }
     });
 }
