@@ -7,13 +7,6 @@ use App\Modules\QueueClass;
 
 class MessageController extends Controller
 {
-    /**
-     * Retrieve the user for the given ID.
-     *
-     * @param  int  $id
-     * @return Response
-     */
-
      /**
       * Send message to the queue
       * @var string data; enum message_type, category
