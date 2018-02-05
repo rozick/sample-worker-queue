@@ -17,3 +17,5 @@ Put to `localhost/reserve-message` with strings message_type, category, and rese
 Delete to `localhost/delete-message/[message_id]`. Message id in the URL.
 
 Make sure to use `composer install` to get lumen/symfony dependencies.
+
+For the database, you can automatically install tables with `php artisan migrate`.
