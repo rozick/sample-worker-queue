@@ -19,3 +19,5 @@ Delete to `localhost/delete-message/[message_id]`. Message id in the URL.
 Make sure to use `composer install` to get lumen/symfony dependencies.
 
 For the database, you can automatically install tables with `php artisan migrate`.
+
+You can run the server by pointing your nginx or apache to the public folder or running the built in PHP dev server with `php -S localhost:8000 -t public`
