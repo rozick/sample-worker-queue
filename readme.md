@@ -1,6 +1,6 @@
-## Simple-Worker-Queue System
+## Sample-Worker-Queue System
 
-Simple queue system based on mysql and using workers (for this demonstration one). The main files here are inside inside the app directory. 
+Sample queue system based on mysql and using workers (for this demonstration one). The main files here are inside inside the app directory. 
 
 Modules/QueueClass.php, Modules/Worker.php, and Http/Controllers/MessageController.php, and Console/Commands/CreateWorkers.php
 
